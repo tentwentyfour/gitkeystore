@@ -72,7 +72,7 @@ if [ $selection -eq 0  ]; then
 	    j=${indices[$i]}
 	    echo "$j - ${keys[$i]} - ${people[$i]}";
 	done
-	echo "Add up values to combine keys. (e.g. 5 for David + Martin)"
+    echo "Add up values to combine keys. (e.g. 5 for John + Ringo)"
 	read selection
 fi
 
