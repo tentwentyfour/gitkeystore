@@ -3,7 +3,8 @@
 ###
 #
 # Encrypt files for safe storage
-# License: GPL v3
+# @license: GPL v3
+# @author David Raison <david@tentwentyfour.lu>
 #
 # Limitations: Currently, this works for 3 people only ;)
 #
@@ -31,7 +32,7 @@ usage() {
 # If git is not configured correctly, bail out!
 thisuser=$(git config user.email)
 if [[ "${thisuser}" == "" ]]; then
-	echo "You must set user.email in your git config!";
+    echo "You must have set user.email in your git config!";
 	exit 1
 fi
 
@@ -47,7 +48,7 @@ done;
 while getopts "ar:" opt; do
     case ${opt} in
         a)
-            echo "Encrypting for all";
+            echo "Encrypting for all keys!";
             selection=7
             shift
             ;;

@@ -3,7 +3,8 @@
 ####
 #
 # Decrypt files
-# License: GPL v3
+# @license: GPL v3
+# @author David Raison <david@tentwentyfour.lu>
 #
 ##
 
